@@ -1,6 +1,8 @@
 #include<iostream>
 using namespace std;
 int main(){
+	
+	//**array**
 	int marks[4]={10,20,30,40};
 	int mathMarks[4];
 	mathMarks[0]=10;
@@ -24,5 +26,13 @@ cout<<"mathmarks";
 	{
 		cout<<"the value of marks "<<i<<" is "<<marks[i]<<endl;
 	}
+	
+	//**pointers**
+	int*p=marks;
+	cout<<"the value of marks[0] is "<<*p<<endl;
+	cout<<"the value of marks[1] is "<<*(p+1)<<endl;
+	cout<<"the value of marks[2] is "<<*(p+2)<<endl;
+	cout<<"the value of marks[3] is "<<*(p+3)<<endl;
+
 	return 0;
 }
